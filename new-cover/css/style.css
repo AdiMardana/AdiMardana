@@ -1,0 +1,166 @@
+:root {
+    /* Color */
+    --primary-color: #DFB364;
+    --heading-color: #FFEE54;
+    --black-color: #2e2828;
+    /* Font */
+    --heading-font: 'Great Vibes', cursive;
+    --sub-heading-font: 'Tangerine', cursive;
+    --main-font: 'Roboto', sans-serif;
+}
+
+
+/* Default Settings */
+
+* {
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+}
+
+.header .cover-box {
+    width: 100%;
+    height: 700px;
+    background-image: url("../img/cover.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: auto;
+}
+
+.header .heading {
+    font-family: var(--heading-font);
+    font-size: 150px;
+    color: var(--heading-color);
+    font-weight: 400;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.content .label {
+    font-family: var(--heading-font);
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--black-color);
+    text-align: center;
+}
+
+.content .guest-name {
+    margin-top: 16px;
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--black-color);
+}
+
+.content .btn-undangan {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .btn-buka {
+    font-size: 25px;
+    font-weight: 400;
+    background-color: var(--primary-color);
+    padding: 5px 20px;
+    border-radius: 7px;
+    border: 2px solid var(--primary-color);
+    color: #fff;
+}
+
+.content .btn-buka:hover {
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.content .detail {
+    margin: 20px auto;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--black-color);
+    text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+    .header .cover-box {
+        width: 100%;
+        height: 700px;
+        background-size: cover;
+        background-position: center;
+    }
+    .header .heading {
+        font-size: 65px;
+        font-weight: 400;
+        padding-top: 30px;
+    }
+    .content .label {
+        font-size: 30px;
+        font-weight: 600;
+        color: var(--black-color);
+        margin-top: 25px;
+    }
+    .content .guest-name {
+        margin-top: 16px;
+        font-size: 35px;
+        font-weight: 700;
+        color: var(--black-color);
+    }
+    .content .btn-undangan {
+        margin-top: 30px;
+    }
+    .content .btn-buka {
+        font-size: 25px;
+    }
+    .content .detail {
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header .cover-box {
+        width: 100%;
+        height: 450px;
+    }
+    .header .heading {
+        font-size: 60px;
+        font-weight: 400;
+        padding-top: 25px;
+    }
+    .content .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content .label {
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .content .guest-name {
+        margin-top: 14px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .content .btn-undangan {
+        margin-top: 20px;
+    }
+    .content .btn-buka {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .content .detail {
+        margin: 0;
+        font-weight: 400;
+        font-size: 12px;
+        width: 250px;
+    }
+}
